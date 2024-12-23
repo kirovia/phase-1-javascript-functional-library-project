@@ -19,3 +19,15 @@ function myMap(collection, callback) {
     for (let i = 0; i < values.length; i++) {newCollection.push(callback(values[i]))};
     return newCollection;
 };
+
+function myReduce(collection, callback, acc) {
+    let values = produceArray(collection);
+    if (acc === undefined) {
+        acc = values[0];
+        values.shift();
+    }
+    for (let i = 0; i < values.length; i++) {
+        acc = callback(acc, values[i], collection);
+    }
+    return acc;
+};
