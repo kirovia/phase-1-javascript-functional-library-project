@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 5,
-    "tests": 12,
-    "passes": 12,
+    "suites": 6,
+    "tests": 15,
+    "passes": 15,
     "pending": 0,
     "failures": 1,
-    "start": "2024-12-23T02:52:46.265Z",
-    "end": "2024-12-23T02:52:46.536Z",
-    "duration": 271
+    "start": "2024-12-23T20:02:11.143Z",
+    "end": "2024-12-23T20:02:11.753Z",
+    "duration": 610
   },
   "tests": [
     {
@@ -20,7 +20,7 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -69,14 +69,14 @@
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -93,18 +93,39 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [
+    },
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
       "duration": 0,
       "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not traverse the whole array if the value is found early",
+      "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns undefined if the value is not present",
+      "fullTitle": "index.js myFind returns undefined if the value is not present",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "correctly filters for values that the callback evaluates as true",
+      "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
+      "duration": 0,
+      "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: myFind is not defined\n    at Context.<anonymous> (test/indexTest.js:106:7)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myFind is not defined"
+        "stack": "ReferenceError: myFilter is not defined\n    at Context.<anonymous> (test/indexTest.js:134:29)\n    at process.processImmediate (node:internal/timers:483:21)",
+        "message": "myFilter is not defined"
       }
     }
   ],
@@ -119,7 +140,7 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -168,14 +189,14 @@
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js myReduce does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -189,6 +210,27 @@
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the value if found",
+      "fullTitle": "index.js myFind returns the value if found",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not traverse the whole array if the value is found early",
+      "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns undefined if the value is not present",
+      "fullTitle": "index.js myFind returns undefined if the value is not present",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

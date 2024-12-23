@@ -31,3 +31,13 @@ function myReduce(collection, callback, acc) {
     }
     return acc;
 };
+
+function myFind(collection, predicate) {
+    let values = produceArray(collection);
+    for (let i = 0; i < values.length; i++) {
+        if (predicate(values[i])) {
+            return values[i]
+        } 
+    }
+    return undefined;
+};
