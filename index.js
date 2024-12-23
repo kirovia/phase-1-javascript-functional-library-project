@@ -53,3 +53,11 @@ function myFilter(collection, predicate) {
     return newArray;
 };
 
+function mySize(collection) {
+    let values = produceArray(collection);
+    let valuesSize = 0;
+    for (let i = 0; i < values.length; i++) {
+        valuesSize++
+    }
+    return valuesSize;
+};
