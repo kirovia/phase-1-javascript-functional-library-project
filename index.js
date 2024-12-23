@@ -41,3 +41,15 @@ function myFind(collection, predicate) {
     }
     return undefined;
 };
+
+function myFilter(collection, predicate) {
+    let values = produceArray(collection);
+    let newArray = [];
+    for (let i = 0; i < values.length; i++) {
+        if (predicate(values[i])) {
+            newArray.push(values[i])
+        };
+    }
+    return newArray;
+};
+
