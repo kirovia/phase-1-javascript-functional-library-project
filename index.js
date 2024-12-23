@@ -15,9 +15,7 @@ function myEach(collection, callback) {
 
 function myMap(collection, callback) {
     let values = produceArray(collection);
-    let newCollection;
-    for (let i = 0; i < values.length; i++) {
-
-    };
+    let newCollection = [];
+    for (let i = 0; i < values.length; i++) {newCollection.push(callback(values[i]))};
     return newCollection;
-}
+};

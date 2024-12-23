@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 3,
-    "passes": 3,
+    "suites": 4,
+    "tests": 7,
+    "passes": 7,
     "pending": 0,
     "failures": 1,
-    "start": "2024-12-22T23:59:13.266Z",
-    "end": "2024-12-22T23:59:13.557Z",
-    "duration": 291
+    "start": "2024-12-23T00:03:27.841Z",
+    "end": "2024-12-23T00:03:28.134Z",
+    "duration": 293
   },
   "tests": [
     {
@@ -27,6 +27,34 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original array",
+      "fullTitle": "index.js myMap does not modify the original array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array from modified object values",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original object",
+      "fullTitle": "index.js myMap does not modify the original object",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -35,13 +63,13 @@
   "pending": [],
   "failures": [
     {
-      "title": "successfully returns a correctly populated array",
-      "fullTitle": "index.js myMap successfully returns a correctly populated array",
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:28)\n    at Context.<anonymous> (test/indexTest.js:46:14)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "Cannot read properties of undefined (reading 'length')"
+        "stack": "ReferenceError: myReduce is not defined\n    at Context.<anonymous> (test/indexTest.js:71:29)\n    at process.processImmediate (node:internal/timers:483:21)",
+        "message": "myReduce is not defined"
       }
     }
   ],
@@ -63,6 +91,34 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original array",
+      "fullTitle": "index.js myMap does not modify the original array",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "successfully returns a correctly populated array from modified object values",
+      "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original object",
+      "fullTitle": "index.js myMap does not modify the original object",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
