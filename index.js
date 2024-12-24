@@ -7,6 +7,8 @@ function produceArray(inputCollection) {
     return Array.isArray(inputCollection) ? values = [...inputCollection] : values = [...Object.values(inputCollection)];
 };
 
+// FUNCTIONS FOR ALL COLLECTIONS
+
 function myEach(collection, callback) {
     let values = produceArray(collection);
     for (let i = 0; i < values.length; i++) {callback(values[i])};
@@ -62,6 +64,8 @@ function mySize(collection) {
     return valuesSize;
 };
 
+// FUNCTIONS FOR ARRAYS
+
 function myFirst(array, integer = 0) {
     let newArray = [];
     if (integer === 0) {
@@ -84,4 +88,12 @@ function myLast(array, integer = 0) {
         }
         return newArray
     }
+};
+
+// FUNCTIONS FOR OBJECTS
+
+function myKeys(object) {
+    let newArray = [];
+    for (const key in object) {newArray.push(key)};
+    return newArray;
 };
