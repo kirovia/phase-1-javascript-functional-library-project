@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 8,
-    "tests": 19,
-    "passes": 19,
+    "suites": 9,
+    "tests": 21,
+    "passes": 21,
     "pending": 0,
     "failures": 1,
-    "start": "2024-12-23T20:07:06.500Z",
-    "end": "2024-12-23T20:07:06.767Z",
-    "duration": 267
+    "start": "2024-12-24T17:02:49.497Z",
+    "end": "2024-12-24T17:02:49.753Z",
+    "duration": 256
   },
   "tests": [
     {
@@ -27,7 +27,7 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -139,6 +139,20 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
@@ -147,13 +161,13 @@
   "pending": [],
   "failures": [
     {
-      "title": "returns the first element of the collection",
-      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "title": "returns the last element of the collection",
+      "fullTitle": "index.js myLast returns the last element of the collection",
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:161:7)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "myFirst is not defined"
+        "stack": "ReferenceError: myLast is not defined\n    at Context.<anonymous> (test/indexTest.js:173:7)\n    at process.processImmediate (node:internal/timers:483:21)",
+        "message": "myLast is not defined"
       }
     }
   ],
@@ -175,7 +189,7 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js myEach returns the original collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -287,6 +301,20 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js mySize correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

@@ -61,3 +61,15 @@ function mySize(collection) {
     }
     return valuesSize;
 };
+
+function myFirst(array, integer = 0) {
+    let newArray = [];
+    if (integer === 0) {
+        return array[0]
+    } else {
+        for (let i = 0; i < integer; i++) {
+            newArray.push(array[i])
+        }
+        return newArray
+    }
+};
