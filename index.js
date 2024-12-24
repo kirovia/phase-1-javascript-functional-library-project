@@ -1,13 +1,9 @@
-let testArray = [1, 2, 3, 4];
-let testObject = {name: 'Joseph', surname: 'Phillips', age: 25, height: 185};
-const testFunction = thing => thing;
+// FUNCTIONS FOR ALL COLLECTIONS
 
 function produceArray(inputCollection) {
     let values;
     return Array.isArray(inputCollection) ? values = [...inputCollection] : values = [...Object.values(inputCollection)];
 };
-
-// FUNCTIONS FOR ALL COLLECTIONS
 
 function myEach(collection, callback) {
     let values = produceArray(collection);
@@ -95,5 +91,11 @@ function myLast(array, integer = 0) {
 function myKeys(object) {
     let newArray = [];
     for (const key in object) {newArray.push(key)};
+    return newArray;
+};
+
+function myValues(object) {
+    let newArray = [];
+    for (const key in object) {newArray.push(object[key])};
     return newArray;
 };
