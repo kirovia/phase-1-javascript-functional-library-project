@@ -73,3 +73,15 @@ function myFirst(array, integer = 0) {
         return newArray
     }
 };
+
+function myLast(array, integer = 0) {
+    let newArray = [];
+    if (integer === 0) {
+        return array[array.length - 1]
+    } else {
+        for (let i = integer; i > 0; i--) {
+            newArray.push(array[array.length - i])
+        }
+        return newArray
+    }
+};
